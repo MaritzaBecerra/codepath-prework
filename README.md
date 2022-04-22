@@ -1,10 +1,10 @@
-# Pre-work - *Memory Game*
+# Pre-work - Time
 
-**Memory Game** is a Light & Sound Memory game to apply for CodePath's SITE Program. 
+Time is a Light & Sound Memory game to apply for CodePath's SITE Program. 
 
-Submitted by: **NAME**
+Submitted by: Maritza Becerra
 
-Time spent: **#** hours spent in total
+Time spent: 20 hours spent in total
 
 Link to project: (insert your link here, should start with https://glitch.com...)
 
@@ -66,7 +66,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## License
 
-    Copyright [YOUR NAME]
+    Copyright Maritza Becerra
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
