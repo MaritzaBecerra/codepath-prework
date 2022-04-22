@@ -1,0 +1,242 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: darkblue;
+  color: white;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+main {
+	padding: 10px 25px;
+	text-align: center;
+	max-width: 100%;
+}
+
+h1 {
+  font-family: times new roman, serif;
+	font-size: 3em;
+	font-weight: 300;
+	color: linen;
+	margin: 0 0 10px;
+}
+
+@media screen and (min-width: 600px) {
+	h1 {
+		font-size: 3em;
+	}
+}
+
+h2 {
+  font-family: monaco, monospace;
+	margin: 0 0 0px;
+	font-size: 1.5em;
+	font-weight: 200;
+	color: linen);
+}
+
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+button {
+  font-size: 26px;
+  padding: 100px;
+  border-radius: 100px;
+  color: black;
+  padding: 15px 50px;
+  background: tan;
+	cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#gameButtonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999999;
+}
+
+#button1 {
+  background: lightgreen;
+}
+
+#button1:active,
+#button1.lit {
+  background: green;
+  box-shadow: 0 5px #666666;
+  transform: translateY(4px);
+}
+
+#button1:hover {background-color: green} 
+
+#button2 {
+  background: lightblue;
+}
+
+#button2:active,
+#button2.lit {
+  background: blue;
+  box-shadow: 0 5px #666666;
+  transform: translateY(4px);
+}
+
+#button2:hover {background-color: blue} 
+
+#button3 {
+  background: pink;
+}
+
+#button3:active,
+#button3.lit {
+  background: red;
+  box-shadow: 0 5px #666666;
+  transform: translateY(4px);
+}
+
+#button3:hover {background-color: red} 
+
+#button4 {
+  background: lightyellow;
+}
+
+#button4:active,
+#button4.lit {
+  background: yellow;
+  box-shadow: 0 5px #666666;
+  transform: translateY(4px);
+}
+
+#button4:hover {background-color: yellow} 
+
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.accordion {
+  width: 100%;
+  background-color: black;
+  border: none;
+  outline: none;
+  text-align: center;
+  padding: 8px 8px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.accordion:after {
+  content: '\002B';
+  font-size: 14px;
+  padding: 8px 8px;
+  float: right;
+}
+
+.active:after {
+  content: "\2212";
+}
+.accordion:hover, button.accordion.is-open {
+  background-color: gray
+}
+
+.accordion-content {
+  color: white;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}

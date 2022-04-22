@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Hello world!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+      >&#9776;</span
+    >
+    <main>
+      <img
+        src="https://cdn.glitch.global/fcae0417-ae11-45b7-93ad-f1a95d417a3f/tardis-doctor-who-tardis-cartoon-door-french-door-transparent-png-2789635.png?v=1650649664857.png"
+        alt="tardis"
+        style="float: left; width: 100px; height: 150px"
+      />
+      <img
+        src="https://cdn.glitch.global/fcae0417-ae11-45b7-93ad-f1a95d417a3f/tardis-doctor-who-tardis-cartoon-door-french-door-transparent-png-2789635.png?v=1650649664857.png"
+        alt="tardis"
+        style="float: right; width: 100px; height: 150px"
+      />
+      <h1>Time</h1>
+      <h2>
+        "People assume that time is a strict progression of cause to effect, but
+        actually, from a nonlinear, non-subjective viewpoint, it's more like a
+        big ball of wibbly-wobbly, timey-wimey... stuff." <br />
+        -
+        <a href="https://www.youtube.com/watch?v=cwdbLu_x0gY">
+          The Tenth Doctor</a
+        >
+      </h2>
+    </main>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="html/about.html" onclick="closeNav()"> About Me</a>
+      <a href="/index.html" onclick="closeNav()"> Time</a>
+      <a href="#" onclick="myFunction(), closeNav()"> Dark Mode</a>
+    </div>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- content starts here -->
+    <div class="container">
+      <button class="accordion">Instructions</button>
+      <div class="accordion-content">
+        <p>
+          This is a game designed to test your memorization and audio skills.
+          The objective of the game is to correctly guess which sound and button
+          it is. As the levels increases more sounds will come up and you shall
+          pick the order of which the sounds went.
+        </p>
+      </div>
+    </div>
+    <!-- contend ends here -->
+    <script src="scripts.js"></script>
+
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">End</button>
+
+    <br /><br />
+
+    <div class="button-container">
+      <button id="makeItRain" class="hidden" onclick="makeItRain()">
+        Make it rain
+      </button>
+      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    </div>
+
+    <div id="gameButtonArea">
+      <button
+        id="button1"
+        onmousedown="startTone(1)"
+        onmouseup="stopTone()"
+        onclick="guess(1)"
+      ></button>
+      <button
+        id="button2"
+        onmousedown="startTone(2)"
+        onmouseup="stopTone()"
+        onclick="guess(2)"
+      ></button>
+      <button
+        id="button3"
+        onmousedown="startTone(3)"
+        onmouseup="stopTone()"
+        onclick="guess(3)"
+      ></button>
+      <button
+        id="button4"
+        onmousedown="startTone(4)"
+        onmouseup="stopTone()"
+        onclick="guess(4)"
+      ></button>
+    </div>
+  </body>
+</html>
